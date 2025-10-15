@@ -9,6 +9,6 @@ int main(void){
     scanf("%lf", &l);
     printf("enter radius of circle r : ");
     scanf("%lf", &r);
-    printf("Area of square : %.4f\n", l*l);
+    printf("Area of square : %.4f\n", l*l*l);
     printf("Area of circle : %.4f\n", PI*r*r);
 }
