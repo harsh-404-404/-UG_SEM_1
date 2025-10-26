@@ -56,9 +56,9 @@ b = lr.intercept_
 
 #model testing
 
-y_pred = lr.predict(x_test) #<class 'numpy.ndarray'>
-y_pred = pd.DataFrame(y_pred,columns=["y_pred"])
-# print(type(y_pred),type(y_test))
+y_pred = lr.predict(x_test) #<here class of y_pred will be 'numpy.ndarray'>
+y_pred = pd.DataFrame(y_pred,columns=["y_pred"])  #changing y_pred in to dataframe of one column and also scence y_pred is 2-d array of only one element that's why only one column 
+#print(type(y_pred),type(y_test))
 
 #y_pred.sum()         #if you wanna print sum use y_pred.value.sum() if you don't that it will also print dtype
 
