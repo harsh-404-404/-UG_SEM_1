@@ -18,8 +18,8 @@ plt.ylabel("package")
 
 print(df.isnull().sum())  
 #pandas .isnull() gonna gives us df of same table but true and false in stade of values
-#(treats all TRUE as 1 and FALSE as -1 )
-#sum on datafreme bu defalut works on column so it will sum all column one buy one and is total sum is 0 than there is no null value
+#(treats all TRUE as 1 and FALSE as 0 )
+#sum on datafreme by defalut works on column so it will sum all column one buy one and is total sum is 0 than there is no null value
 
 
 #find the independent and deoendent feature
