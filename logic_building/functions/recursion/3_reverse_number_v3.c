@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 
-int helper_reverse(int n , int rev){
+size_t helper_reverse(size_t n , size_t rev){
 
     if(n == 0 ){
 
@@ -12,16 +12,16 @@ int helper_reverse(int n , int rev){
 
 }
 
-int reverse(int n){
+size_t reverse(size_t n){
 
     return helper_reverse(n,0);
 
 }
 
-int main(void){
+size_t main(void){
 
-    int n = 12345;
-    printf("%d",reverse(n));
+    size_t n = 12345;
+    printf("%zu",reverse(n));
 
 
 }
