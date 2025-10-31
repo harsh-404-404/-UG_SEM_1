@@ -30,6 +30,9 @@ print("item size of 2d array",my_2d_array.itemsize)
 print("total bytes of 2d array",my_2d_array.nbytes)
 
 #reshaping array
+#reshape(number of row,number of column)      total elemets in original array in total should be row*column 
+#E.x if original array is 6*4 total 9 elements than in reshape array total elements should be 9 .reshape(12,2) .reshape (24,1)
+#You can use -1 to let NumPy automatically figure out one of the dimension E.x reshape (1,-1) this mean no matter how many elemetns I wawnt 1 row and column -1 row (-1 mean)
 reshaped_array = my_2d_array.reshape(1,9)
 print("reshaped array\n",reshaped_array)
 #reshaping array -1 means calculate dimension automatically
