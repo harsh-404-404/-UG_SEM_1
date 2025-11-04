@@ -18,10 +18,10 @@ print(type(df))
 print(df.head(20))  #by default return first 5 row from top E.g fd.head(20) will return first 20 row
 
 #fatch data from bottom
-print(df.tail(20))  #by default last 5 rows
+print(df.tail(20))  #by default last 20 rows
 
 #fatch data point randomly
-print(df.sample(7)) #by default 1 random raw
+print(df.sample(7)) #by default 1 random raw but here 
 
 #find the information of the data
 print(df.info())
@@ -29,6 +29,7 @@ print(df.info())
 #How does the data look like methematiclly
 
 print(df.describe())
+
 print(df.columns)                #columns is a property of dataframe/papndaas
 
 #find the duplicate value
@@ -54,8 +55,7 @@ print([df.loc[0:4],["title",'budget',"revenue"]])     #loc includes 4th index it
 #find unique value from a column
 print(df["original_language"].unique())
 
-print(df["original_language"]=="en")
-print(df[df["original_language"]=="en"])
+hindi_movie = df[df["original_language"]=="hi"]
+print(hindi_movie)
 
-hindi_movie = df[df["original_language"] == 'en']
 hindi_movie.to_csv("hindi_movie.csv")
