@@ -83,9 +83,10 @@ print("sum of rows in 2d array",np.sum(my_2d_array,axis=1))
 
 
 #creating special arrays
-zeros_array = np.zeros((3,4))
+zeros_array = np.zeros((3,4),dtype="int")
 print("3x4 array of zeros\n",zeros_array)
 ones_array = np.ones((2,3))
+
 print("2x3 array of ones\n",ones_array)
 full_array = np.full((2,2),7)
 print("2x2 array of sevens\n",full_array)
