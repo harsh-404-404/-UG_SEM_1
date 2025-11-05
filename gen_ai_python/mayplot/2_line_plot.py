@@ -22,6 +22,6 @@ plt.title("Two Lines on One Plot")
 plt.grid(True)
 
 # This command looks for the 'label' on each plot and displays it
-plt.legend()
+plt.legend(title = "xyz", loc="upper right")
 
 plt.show()

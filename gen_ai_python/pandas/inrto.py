@@ -30,7 +30,7 @@ print(df.info())
 
 print(df.describe())
 
-print(df.columns)                #columns is a property of dataframe/papndaas
+print(df.columns)                #columns is a property of dataframe/papndaas   #this will give list of columns name 
 
 #find the duplicate value
 print(df.duplicated().sum())

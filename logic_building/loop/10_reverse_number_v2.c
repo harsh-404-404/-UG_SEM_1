@@ -4,11 +4,10 @@ int main(void){
 
     int n = 404;
     int rev = 0;
-    int rem;
     int temp = n;
     while(temp != 0){
-        rem = temp % 10;
-        rev = (rev*10) + rem;
+
+        rev = (rev*10) + (temp % 10);
         temp /= 10;
     }
     printf("%d\n",rev);

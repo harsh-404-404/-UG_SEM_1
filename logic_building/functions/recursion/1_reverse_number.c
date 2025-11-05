@@ -9,9 +9,7 @@ int reverse(int n){
         return n;
     }
 
-    int rev = reverse(n / 10);
-    int power = log10(n);
-    return ((n%10)*pow(10,power)) + rev;
+    return ((n%10)*pow(10,(int)log10(n))) + reverse(n / 10);
 }
 
 int main(void){
