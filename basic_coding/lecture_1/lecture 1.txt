@@ -15,6 +15,7 @@ WAP that accepts the values of three resistances and finds out the difference be
 WAP that accepts three numbers from the user and displays the top two numbers.
 WAP that accepts a character and displays whether it is a consonant or a vowel.
 WAP that accepts two numbers and displays their ceiling and floor values.
-WAP that accepts three angels lengths for a proposed triangle and determines its possibility.				
+WAP that accepts three angels lengths for a proposed triangle and determines its possibility.
+WAP that accepts five numbers from user and find the sum of best of four.
 A monkey is climbing a pole. It climbs 5 feet in the first minute and slips down 2 feet in the very next minute. This pattern repeats. 
 Write a program that accepts the total height of the pole from the user and determines the total time (in minutes) it will take for the monkey to reach the top.
