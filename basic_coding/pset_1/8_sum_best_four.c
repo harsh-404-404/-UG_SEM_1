@@ -1,57 +1,30 @@
 #include <stdio.h>
-#include <stdlib.h>
-
-int* get_ip(int len);
-void bsort(int* num,int len);
-int sum(int* num,int len);
 
 int main(void){
 
-    int len = 5;
-    int* num = get_ip(len);
+    int a,b,c,d,e;
 
-    bsort(num,len);
-    printf("Sum of top 4 number is :%d",sum(num,4));
-    free(num);
-}
+    printf("Enter 5 space sapareted numbers:");
+    scanf("%d %d %d %d %d",&a,&b,&c,&d,&e);
 
-
-int* get_ip(int len){
-
-    int* num = malloc(sizeof(int)*len);
-    for(int i = 0; i < len; ++i){
-
-        printf("%d.enter a number: ",i+1);
-        scanf("%d",&num[i]);
+    int sum = a + b + c + d + e;
+    if (a < b && a < c && a < d && a < e){
+        sum -= a;
     }
-    return num;
+    else if (b < a && b < c && b < d && b < e){
+        sum -= b;
+    }
+    else if (c < a && c < b && c < d && c < e){
+        sum -= c;
+    }
+    else if (d < a && d < b && d < c && d < e){
+        sum -= d;
+    }
+    else{
+        sum -= e;
+    }
     
-}
-
-void bsort(int* num,int len){
-
-    for(int i = len-1; i > 0; --i){
-        
-        for(int k = 0; k < i;++k){
-            
-            if(num[k] < num[k+1]){
-
-                int temp = num[k+1];
-                num[k+1] = num[k];
-                num[k] = temp;
-
-            }
-        }
-    }
-
-}
-
-int sum(int* num,int top_n){
-
-    int sum = 0;
-    for(int i = 0; i < top_n; ++i){
-        sum += num[i];
-    }
-    return sum;
+    printf("Sum of best four numbers is:%d",sum);
+    
 
 }
