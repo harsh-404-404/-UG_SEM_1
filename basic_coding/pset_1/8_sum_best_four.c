@@ -11,7 +11,7 @@ int main(void){
     int* num = get_ip(len);
 
     bsort(num,len);
-    printf("Sum of top 4 number is :%d",sum(num,len));
+    printf("Sum of top 4 number is :%d",sum(num,4));
     free(num);
 }
 
@@ -46,10 +46,10 @@ void bsort(int* num,int len){
 
 }
 
-int sum(int* num,int len){
+int sum(int* num,int top_n){
 
     int sum = 0;
-    for(int i = 0; i < 4; ++i){
+    for(int i = 0; i < top_n; ++i){
         sum += num[i];
     }
     return sum;
