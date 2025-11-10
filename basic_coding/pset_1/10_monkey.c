@@ -14,8 +14,10 @@ int main(void)
     }
 
     min = (temp/3)*2;                           //time to reach temp distance can be directly be calculated via 3ft/2min speed
-    min += ((h - temp) / 5);                    //we obsesrved that after hight which is multiple of three(here temp) monkey climbes with speed of 5ft/min
-    printf("%gmin",min);
+    min += ((h - temp) / 5);
+    float sec = (min - (int)min)*60; 
+    min = (int) min;                    //we obsesrved that after hight which is multiple of three(here temp) monkey climbes with speed of 5ft/min
+    printf("%g min %g sec",min,sec); //%g removes unnecesory zeros from float E.x 2.00000 -> 2
 }
 //    invariant:- monkey will reach new hight only starting from hights which are multiple of three and he will climbe at he rate of 5ft/s
 
