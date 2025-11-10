@@ -17,7 +17,8 @@ int main(void)
     min += ((h - temp) / 5);
     float sec = (min - (int)min)*60; 
     min = (int) min;                    //we obsesrved that after hight which is multiple of three(here temp) monkey climbes with speed of 5ft/min
-    printf("%g min %g sec",min,sec); //%g removes unnecesory zeros from float E.x 2.00000 -> 2
+
+    (sec != 0) ? printf("%g min %g sec",min,sec) : printf("%g min",min);  //%g removes unnecesory zeros from float E.x 2.00000 -> 2
 }
 //    invariant:- monkey will reach new hight only starting from hights which are multiple of three and he will climbe at he rate of 5ft/s
 
