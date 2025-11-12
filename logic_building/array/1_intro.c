@@ -30,7 +30,8 @@ int main(void){
 
     int b[size+1];
 
-    for(int i = 0 ; i < size+1; i++){
+    size += 1;
+    for(int i = 0 ; i < size; i++){
         if (i < position - 1){
            b[i]=a[i]; 
         }
@@ -41,7 +42,7 @@ int main(void){
             b[i] = a[i-1];
         }
     }
-    size += 1;
+    
 
     for(int i = 0; i < size; ++i){
         printf("%d ",b[i]);  
