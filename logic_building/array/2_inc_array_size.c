@@ -10,7 +10,8 @@ void print_array(int* a, int size){
     }
     printf("\n");
 }
-
+//here we pass pointer of array pointer a because we need to modify the address of array a to point to new array
+//also we cann't free because 'a' was defind in main function can we cann't free memery which was not allocated in current function
 void insert(int** a,int* size,int position,int value){
     *size += 1;
     int* b = malloc( (sizeof(int)) * (*size) );
@@ -29,9 +30,8 @@ void insert(int** a,int* size,int position,int value){
             b[i] = (*a)[i-1];
         }
     }
-    int *temp = *a;
-    *a = b;
-    free(temp);
+    free(*a);  //free the memory of array 'a' but in main 'a' variable still holds the pointer to that memory
+    *a = b;     //scence we know the adress of 'a array ponter' we will change it to adress of array b
     
 
 }
@@ -70,6 +70,12 @@ int main(void){
 
     print_array(a,size);
 
+    //printf("%p", (void*)a);
     free(a);
+    //printf("\n %p", (void*)a); //dangling pointer
 
+    //lets say we use free(a) inside insert() than it will free that memory block but 'a' variable which was storing the pointer to that memory block will still point towards it
+    //that's why we can not free array which was not diclaredin same funtion and that is where **a pointer-to-pointer comes in handy
+    //if we have adress of 'a' (&a) than we can free the memory block and make 'a' point towards another array
+    
 }
