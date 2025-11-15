@@ -417,6 +417,7 @@ matrix* softmax(matrix* a){
                 max_row = a->value[index];
             }
         }
+        //here we are substactin max value of that row (vector) to pervent it from overflowing because e^100 can go neer infinity
         for(int j = 0;j < col; ++j){
 
             int index = index_base + j;
