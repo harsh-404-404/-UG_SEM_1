@@ -244,7 +244,7 @@ float dot_product(const matrix* a, const matrix* b){
     assert(b->col == 1 || b->row == 1);
 
     int temp = b->col * b->row;
-    int sum = 0;
+    float sum = 0;
     for(int i = 0; i < temp;++i){
         sum += a->value[i] * b->value[i];
     }
@@ -434,4 +434,8 @@ matrix* softmax(matrix* a){
 
 }
 
-int main(void){}
+int main(void){
+
+    matrix* i = new_random_matrix(2,2,254,64);
+    print_matrix(i);
+}
