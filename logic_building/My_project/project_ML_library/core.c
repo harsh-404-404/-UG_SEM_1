@@ -436,6 +436,9 @@ matrix* softmax(matrix* a){
 
 int main(void){
 
-    matrix* i = new_random_matrix(2,2,254,64);
-    print_matrix(i);
+    matrix* i = new_random_matrix(100,100,1,20);
+    matrix* j = transpose_matrix(i);
+    free_matrix(i);
+    print_matrix(j);
+    free_matrix(j);
 }
