@@ -23,3 +23,17 @@ How to make any matrix in to a upper triangular matrix:
         Rx - x*Rp (where Rx is the row to be eliminated, Rp is the pivot row, and x is the factor to eliminate the entry).
 
         x = entry/pivot
+
+
+
+
+There is a famous mathematical algorithm called the Box-Muller Transform. It turns "Flat Randomness" (Uniform) into "Bell Curve Randomness" (Gaussian).
+The Equations:Given two random numbers U1 and U2, uniformly distributed in the interval (0, 1], the Box-Muller transform produces two independent standard normally distributed random numbers Z0 and Z1 using the following equations:
+Z0 = sqrt(-2 * ln(U1)) * cos(2 * π * U2)
+Z1 = sqrt(-2 * ln(U1)) * sin(2 * π * U2)
+
+
+0 1 2 3 4 5 6 7 8 
+
+3 5
+9 
