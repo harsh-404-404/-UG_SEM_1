@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include <assert.h>
-#include <time.h>
 #include <math.h>
 
 #define PI 3.14159265359
@@ -135,7 +133,7 @@ matrix* copy_matrix(const matrix *old) {
     return new;
 }
 
-matrix* reshape_matrix_safe(const matrix* m, int new_rows, int new_cols){
+matrix* reshape_matrix(const matrix* m, int new_rows, int new_cols){
     CHECK_NULL_MATRIX(m,NULL);
     if (new_rows * new_cols != (m->col) * (m->row)) {
         ERROR_LOG("Invalid matrix Dimension ! can not reshape %d x %d matrix into %d x %d",m->row,m->col,new_rows,new_cols);
@@ -150,7 +148,7 @@ matrix* reshape_matrix_safe(const matrix* m, int new_rows, int new_cols){
 
 
 //reshape return 0 on success -1 on failure
-int reshape_matrix(matrix *m, int new_rows, int new_cols) {
+int reshape_matrix_inplace(matrix *m, int new_rows, int new_cols) {
     CHECK_NULL_MATRIX(m,-1);
     if (new_rows * new_cols != (m->col) * (m->row)) {
         ERROR_LOG("Invalid matrix Dimension ! can not reshape %d x %d matrix into %d x %d",m->row,m->col,new_rows,new_cols);
@@ -874,7 +872,7 @@ int get_cols(matrix* m) {
     return m->col;
 }
 
-
+int main(){}
 
 
 
