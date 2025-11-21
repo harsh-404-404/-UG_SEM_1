@@ -19,3 +19,4 @@ WAP that accepts three angels lengths for a proposed triangle and determines its
 WAP that accepts five numbers from user and find the sum of best of four.
 A monkey is climbing a pole. It climbs 5 feet in the first minute and slips down 2 feet in the very next minute. This pattern repeats. 
 Write a program that accepts the total height of the pole from the user and determines the total time (in minutes) it will take for the monkey to reach the top.
+WAP that accepts five numbers and finds the sum of best of four.
