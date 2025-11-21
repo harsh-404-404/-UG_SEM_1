@@ -86,7 +86,6 @@ matrix *new_gaussian_matrix(int a, int b)
     return m;
 }
 
-matrix *eye(int n)
 {
     matrix *m = new_matrix(n, n);
     fill_matrix(m, 0.0f);

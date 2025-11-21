@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <math.h>
 
+#define EPSILON 1e-9  //some times pivot in determinant calculation becomes zero due to floating point precision error so we can use this small value to check near zero values
 #define PI 3.14159265359
 
 #define ERROR_LOG(fmt, ...) fprintf(stderr, "[ERROR] %s:%d: " fmt "\n", __FILE__, __LINE__, ##__VA_ARGS__)
@@ -546,10 +547,10 @@ float determinant_matrix(const matrix *m){
 
         
         float pivot = k->value[i*col+i];
-        if(pivot == 0){
+        if(fabs(pivot) < EPSILON){
             int temp;
             for(temp = i+1; temp < row; ++temp){
-                if(k->value[temp*col+i] != 0){
+                if(fabs(k->value[temp*col+i]) >= EPSILON){
                     swap_rows(k,temp,i);
                     pivot = k->value[i*col+i];
                     end_det *= (-1);
