@@ -1,0 +1,44 @@
+What is array :-An array is a collection of elements of the same data type, stored in continuous memory locations, accessed using an index.Example: int a[5] = {1,2,3,4,5};
+
+What is ceiling division and floor division :-
+
+		Ceiling division gives the result of division rounded up to the nearest integer. Example: 7 ÷ 3 = 2.33 → ceiling division = 3
+		Floor division gives the result of division rounded down to the nearest integer. Example: 7 ÷ 3 = 2.33 → floor division = 2
+
+What is ceiling with significance and floor with significance :-
+
+		Ceiling with significance means rounding a number up to the nearest multiple of a given value (called significance).
+		Example: CEILING(13, 4) → the next multiple of 4 is 16, so result = 16.
+
+		Floor with significance means rounding a number down to the nearest multiple of a given value.
+		Example: FLOOR(14, 4) → the previous multiple of 4 is 12, so result = 12.
+
+
+
+
+
+Problem set:-
+
+Problems :-
+	1. WAP to take 5 numbers from the user, store them in an array, and reverse the array sequence.
+
+	Example:
+	Input: [1,2,3,4,5]
+	Output: [5,4,3,2,1]
+
+	2. WAP to take 5 numbers from the user, store them in an array, and create a new array where each element is the cumulative sum.
+	Example:
+		Input: [7,9,6,2,3]
+		Output: [7,16,22,24,27]												
+
+	3. WAP where A and B are input arrays and C is the output array.
+	Example:
+		A = [10,3,6,9,7]
+		B = [3,24,4,3,18]
+		C = [12,24,8,9,14]
+
+	4. WAP where A and B are input arrays and C is the output array.
+	Example:
+		A = [10,3,6,9,7]
+		B = [3,24,4,3,18];
+		C = [28,6,10,33,10]
