@@ -21,10 +21,9 @@ Problem set:-
 
 Problems :-
 	1. WAP to take 5 numbers from the user, store them in an array, and reverse the array sequence.
-
 	Example:
-	Input: [1,2,3,4,5]
-	Output: [5,4,3,2,1]
+		Input: [1,2,3,4,5]
+		Output: [5,4,3,2,1]
 
 	2. WAP to take 5 numbers from the user, store them in an array, and create a new array where each element is the cumulative sum.
 	Example:
