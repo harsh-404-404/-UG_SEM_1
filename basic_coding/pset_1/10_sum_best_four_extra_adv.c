@@ -1,28 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int* get_ip(int len);
+int* get_ip(int* num , int len);
 void bsort(int* num,int len);
 int sum(int* num,int len);
 
 int main(void){
 
     int len = 5;
-    int* num = get_ip(len);
+    int* num = malloc(sizeof(int)*len);
 
+    get_ip(num,len);
     bsort(num,len);
     printf("Sum of top 4 number is :%d",sum(num,4));
+    
     free(num);
     return 0;
 }
 
-int* get_ip(int len){
+int* get_ip(int* num,int len){
 
-    int* num = malloc(sizeof(int)*len);
-    if(num == NULL){
-        fprintf(stderr,"malloc faild\n");
-        exit(1);
-    }
     for(int i = 0; i < len; ++i){
 
         printf("%d.enter a number: ",i+1);
