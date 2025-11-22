@@ -57,7 +57,7 @@ int main(void){
                 continue;
             }
             else{
-                c[i] = b[i] - (b[i] % a[i]) + a[i];
+                c[i] = b[i] - (b[i] % a[i]);
             }
         }
 
