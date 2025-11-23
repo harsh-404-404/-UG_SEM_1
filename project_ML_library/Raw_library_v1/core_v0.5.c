@@ -1,3 +1,4 @@
+#include <time.h>
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -873,7 +874,41 @@ int get_cols(matrix* m) {
     return m->col;
 }
 
-int main(){}
+int main() {
+    int N = 1000; // Defines a 1000x1000 matrix (1 Million elements)
+    
+    printf("------------------------------------------------\n");
+    printf("[BENCHMARK] Stress Test: Matrix Multiplication\n");
+    printf("------------------------------------------------\n");
+    printf("Initializing two %dx%d matrices...\n", N, N);
+
+    // 1. Setup: Allocate heavy memory (approx 8MB each)
+    matrix *A = new_random_matrix(N, N, -1.0, 1.0);
+    matrix *B = new_random_matrix(N, N, -1.0, 1.0);
+
+    printf("Start Calculation...\n");
+
+    // 2. Start Timer
+    clock_t start = clock();
+
+    // 3. Run Computation (Standard O(N^3) Algorithm)
+    // For N=1000, this performs 2 Billion floating-point operations
+    matrix *C = multiply_matrix(A, B);
+
+    // 4. Stop Timer
+    clock_t end = clock();
+    double time_taken = (double)(end - start) / CLOCKS_PER_SEC;
+
+    printf("Done!\n");
+    printf("Time Elapsed: %.4f seconds\n", time_taken);
+    
+    // 5. Cleanup
+    free_matrix(A); 
+    free_matrix(B); 
+    free_matrix(C);
+    
+    return 0;
+}
 
 
 
