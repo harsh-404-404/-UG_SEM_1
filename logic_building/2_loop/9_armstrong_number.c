@@ -3,7 +3,7 @@
 
 int main(void){
 
-    int k = 1523,temp = k,count = 0;
+    int k = 1235,temp = k,count = 0;
     while(temp != 0){
         temp /= 10;
         count++;

@@ -34,7 +34,7 @@ int main(void){
     }
     if(is_reduced == 0){
         printf("invalid  number !");
-        return;
+        return 1;
     }
     --size;
     for(int i = 0; i < size; ++i){

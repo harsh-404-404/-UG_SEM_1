@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <string.h>
-#include <stdbool.h>
 
-bool compaiar(char* arr1,char* arr2){
+int compaiar(char* arr1,char* arr2){
 
     int size1 = strlen(arr1);
     int size2 = strlen(arr2);
@@ -13,7 +12,6 @@ bool compaiar(char* arr1,char* arr2){
 
     for(int i = 0; i < size1; ++i){
         if(arr1[i] != arr2[i]){
-            printf("False: they are diffrent");
             return 0;   
         }
     }
