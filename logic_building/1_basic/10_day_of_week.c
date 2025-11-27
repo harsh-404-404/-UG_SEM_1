@@ -1,4 +1,4 @@
-//Write a program to check it the day is are correct or not
+//Write a program to check which day of the week is it?
 
 #include <stdio.h>
 

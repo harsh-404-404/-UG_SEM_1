@@ -11,7 +11,7 @@ int main()
     /*  this is wrong because we are using k which is a pointer which does not point wards any thing
     char *k;
     printf("enter a charactor :");
-    scanf("%s", &k);  always make sure that you are putting a valid pointer or with %s a pre-allocated memory E.x char input[100] scanf("%s",input)not &input because input is already and adress
+    scanf("%s", k);  always make sure that you are putting a valid pointer or with %s a pre-allocated memory E.x char input[100] scanf("%s",input)not &input because input is already and adress
     */
 
     char ip[100]; /*max input size we expect is 100*/

@@ -8,7 +8,7 @@ int main(void)
     int b = y;
 
     // Use the Euclidean algorithm to compute GCD
-    while (b != 0) {
+    while (b != 0){
         int temp = b;
         b = a % b;
         a = temp;

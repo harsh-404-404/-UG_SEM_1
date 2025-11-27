@@ -14,7 +14,7 @@ int main(void){
     int n = 5;
     if(n <= 0){
         printf("!! not valid !!");
-        return 0;
+        return 1;
     }
     printf("%d! = %d",n,factorial(n));
 }

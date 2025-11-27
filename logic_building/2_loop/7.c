@@ -1,3 +1,9 @@
+//Write a C program to print the following pattern:
+//    *              
+//  * * *
+//* * * * *
+//  * * *
+//    *
 #include <stdio.h>
 
 int main(void){

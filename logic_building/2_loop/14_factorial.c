@@ -16,3 +16,14 @@ int main(void){
     }
     printf("%d! = %d",n,factorial(n));
 }
+
+
+
+    // int n  = 5;
+    // int fact = 1;
+    // while (n != 0){
+        
+    //     fact = fact * n;
+    //     n -= 1;
+    // }
+    // printf("Factorial of digits is %d",fact);

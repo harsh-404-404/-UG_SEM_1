@@ -1,6 +1,4 @@
 #include <stdio.h>
-//macro
-#define MAX 100
 
 int main(void){ 
     
