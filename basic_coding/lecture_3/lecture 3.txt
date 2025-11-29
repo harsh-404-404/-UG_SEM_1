@@ -1,0 +1,13 @@
+pset questions
+
+1.	Write a program that accepts a number from the user and converts it to binary. Also, implement the logic to convert binary back to decimal.
+
+2.	Accept a name from the user and display its modified form.
+		Example: shoolini -> hoolinis
+		Example: neha -> ehan
+		(The first character moves to the last position).
+		
+3. Accept two strings from the user. If the second string is found in the first, ask for a third string and replace the second string with the third in the first string. Else, print nothing.
+		Example: concatinate + cat -> (replace with dog) -> condoginate
+		
+4. Word Reversal: Accept a sentence and reverse every individual word within it (e.g., "Hello World" -> "olleH dlroW").

@@ -39,10 +39,12 @@ int main(void){
     take_ip(a,count);
     printf("<--Enter the the numbers for secounf array-->\n");
     take_ip(b,count);
-
+    //if element of a is greater than b then answer is c celing
+    //if element of b is greater than a then answer is c floor
     for(int i = 0; i < count; ++i){
         
         if(a[i] > b[i]){
+
             if(a[i] % b[i] == 0){
                 c[i] = a[i];
                 continue;
@@ -52,6 +54,7 @@ int main(void){
             }
         }
         else{
+            
             if(b[i] % a[i] == 0){
                 c[i] = b[i];
                 continue;

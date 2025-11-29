@@ -33,7 +33,51 @@ Z0 = sqrt(-2 * ln(U1)) * cos(2 * π * U2)
 Z1 = sqrt(-2 * ln(U1)) * sin(2 * π * U2)
 
 
-0 1 2 3 4 5 6 7 8 
+aasert()
+rand()
+srand()
+expf(-x)
+tanh() hyperbolic tangent
 
-3 5
-9 
+int randomNumber = (rand() % (y - x + 1)) + x;
+
+
+i*(col)+j
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+
+int main(void){
+    srand(time(NULL));
+    printf("%d\n",rand());
+
+    printf("%f\n",(float)rand()/(float)RAND_MAX);
+
+    //random number between 11-19
+    printf("%d\n",rand() % (19-11) + 11);
+
+//    [0 1] * x = [0 x] + y = [y x+y];
+//    random float between x and y
+    int x=11;
+    int y=19;
+    float random = ((float)rand()/(float)RAND_MAX)*(y-x) + x;
+
+ 
+
+}	
+
+
+
+cofactor = (-1)^i+j Mij
+M--minor metrix
+
+
+The adjoint of a matrix is the transpose of its cofactor matrix
+
+
+
+
