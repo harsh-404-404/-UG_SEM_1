@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 
-int main(void){
+ main(void){
 
     int n;
     printf("Enter a ammout: ");
