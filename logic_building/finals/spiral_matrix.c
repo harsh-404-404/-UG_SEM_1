@@ -2,40 +2,36 @@
 
 int main(void){
 
-    int n,m;
-    printf("Enter length of matrix:");
-    scanf("%d",&m);
-    printf("Enter Height of matrix:");
+    int n;
+    printf("Enter a size of (n x n) matrix:");
     scanf("%d",&n);
 
+    int matrix[n][n];
 
-    int matrix[m][n];
-
-    int times = (m+1)/2;
+    int times = (n % 2 == 1)?(n/2)+1 : n/2;
     int digit = 1;
-    int k = 0,l = 0;
+    int k = 0;
     while(k < times){
-        int i = k,j = l;
-        matrix[i][j] = digit; 
-        while(j < m-1-k){
+        int i = k,j = k;
+        matrix[i][j] = digit;
+        while(j < n-1-k){
             matrix[i][j++] = digit++;
         }
-        while(i < n-1-l){
+        while(i < n-1-k){
             matrix[i++][j] = digit++;
         }
         while(j > k){
             matrix[i][j--] = digit++;
         }
-        while(i > l){
+        while(i > k){
             matrix[i--][j] = digit++;
         }
         k++;
-        l++;
     }
 
 
     for(int i = 0; i < n; ++i){
-        for(int j = 0; j < m;++j){
+        for(int j = 0; j < n;++j){
             printf("\t%d",matrix[i][j]);
         }
         printf("\n");
