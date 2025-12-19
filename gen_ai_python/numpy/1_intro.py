@@ -127,5 +127,3 @@ print("reshaped array\n",reshaped_array)
 #reshaping array -1 means calculate dimension automatically
 reshaped_array = my_2d_array.reshape(9,-1)
 print("reshaped array\n",reshaped_array)
-
-

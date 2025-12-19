@@ -7,7 +7,7 @@ list_of_list = [["Amar", 15],["Akbar", 14],["Anthony", 13]]
 df = pd.DataFrame(list_of_list,columns = ["name", "age"])
 print(df)
 
-df = pd.read_csv("C:/Users/harsh/Desktop/VS_code/gen_ai_python/pandas/imdb_data.csv")
+df = pd.read_csv("imdb_data.csv")
 print(df)
 
 #find the number of rows and column 
@@ -49,11 +49,11 @@ print(df[0:4])
 print(df.iloc[0:4,0:3])    #iloc[row,column]
 
 #
-print([df.loc[0:4],["title",'budget',"revenue"]])     #loc includes 4th index item
+print(df.loc[0:4,["title",'budget',"revenue"]])     #loc includes 4th index item
 
 
 #find unique value from a column
-print(df["original_language"].unique())
+print(df["original_language"].unique())       #unique is only for panda series
 
 hindi_movie = df[df["original_language"]=="hi"]
 print(hindi_movie)
