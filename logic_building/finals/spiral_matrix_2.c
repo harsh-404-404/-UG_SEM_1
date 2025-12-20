@@ -8,7 +8,7 @@ int main(void){
     printf("Enter a column matrix:");
     scanf("%d",&m);
 
-    int matrix[m][n];
+    int matrix[n][m];
 
     int top = 0,bottom = n-1,left = 0,right = m-1;
     int digit = 1;
