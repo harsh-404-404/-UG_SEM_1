@@ -18,5 +18,4 @@ int main(void){
 
     merge_print(arr1,arr2);
 
-
 }

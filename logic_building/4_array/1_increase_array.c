@@ -8,7 +8,7 @@ int main(void){
 
     printf("Enter %d elemtnts ->\n",size);
     int a[size];
-
+    
     for(int i = 0; i < size; ++i){
         printf("Enter a number:");
         scanf("%d",a+i);   // or &a[i]

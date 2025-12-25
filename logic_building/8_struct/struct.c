@@ -3,13 +3,14 @@
 #include <string.h>
 
 struct student{
-    char name[50];
-    int age;
-    unsigned long mobile_no;
+
+   char name[50];
+   int age;
+   unsigned long mobile_no;
 };
 
-int main()
-{
+int main(){
+
    struct student st1;
    struct student *st2;
 
@@ -29,7 +30,8 @@ int main()
    printf("\tstudent age:%d\n",st1.age);
    printf("\tstudent mobile no:%lu\n",st1.mobile_no);
 
-// input using second method
+   // input using second method
+
    printf("enter the student name:");
    fgets(st2->name,sizeof(st2->name),stdin);
    printf("enter age:");

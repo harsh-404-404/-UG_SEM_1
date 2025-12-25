@@ -15,7 +15,8 @@ int main()
     switch (day)
     { // in swith you can nonot use && or ||  (arithmetic oparator)
         case 1:
-            printf("Monday"); break;
+            printf("Monday"); 
+            break;
         case 2:
             printf("Tuesday");
             break;
@@ -33,8 +34,7 @@ int main()
             break;
         case 7:
             printf("Sunday");
-            break;
-            
+            break;            
         default:
             // this will never be executed because of the while loop above
             printf("Invalid input");
