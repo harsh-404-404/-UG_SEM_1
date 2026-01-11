@@ -17,7 +17,7 @@ int main(void)
         //substraction
         printf("a-b=%d \n", a-b);
         //multiplication
-        printf("a*b=%d \n", a*b);
+        printf("a*b=%d \n", a*b)
         //modulas
         printf("a%b=%d \n", a%b);
         //division
