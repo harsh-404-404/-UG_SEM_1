@@ -10,7 +10,7 @@ int main(void)
 {
 
     int a[] = {1,3};
-    int b[] = {2, 3};
+    int b[] = {2,3};
 
     int a_count = sizeof(a) / sizeof(a[0]);
     int b_count = sizeof(b) / sizeof(b[0]);
