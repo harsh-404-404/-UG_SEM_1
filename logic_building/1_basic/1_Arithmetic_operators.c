@@ -19,7 +19,7 @@ int main(void)
         //multiplication
         printf("a*b=%d \n", a*b);
         //modulas
-        printf("a%b=%d \n", a%b);
+        printf("a%%b=%d \n", a%b);
         //division
         printf("a/b=%d \n", a/b);
 
